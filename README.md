@@ -6,5 +6,7 @@ In the case of LangChain, the reasons for creating an issue were the need to man
 
 * I am more interested not so much in solving the specific errors I encountered but in the likelihood of user-side errors occurring in the future. It is expected that by following the documentation instructions, a developer should be able to run the project effortlessly. However, the presence of errors at such an early stage of using the library raises doubts about its stability and reliability.
 
+**Brief Description of the Bug (you can see the full picture in Notebook №1-2):** I am using the latest version of the `llama-Index` and `llama-index-llms-fireworks` libraries, but when I try to access `from llama_index.llms.fireworks import Fireworks`, I encounter two import errors: `cannot import name 'global_handler' from 'llama_index.core' (unknown location)` and `ImportError: cannot import name 'Secret' from 'pydantic'`.
+
 1. **[Notebook](https://github.com/hherpa/LlamaIndex-Reliability-Issues/blob/main/cannot_import_name_Secret_from_pydantic.ipynb) with the first error**
 2. **[Notebook](https://github.com/hherpa/LlamaIndex-Reliability-Issues/blob/main/cannot_import_name_global_handler_from_llama_index.ipynb) with the second error**
