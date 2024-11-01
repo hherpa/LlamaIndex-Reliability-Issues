@@ -1,5 +1,7 @@
 # Reliability Issue/Version Problems in LlamaIndex
 
+* https://github.com/run-llama/llama_index/issues/16774
+
 Due to terrible documentation and a severe lack of optimization for developers, which I elaborated on in [LangChain-ToolDocs-Problem](https://github.com/hherpa/LangChain-ToolDocs-Problem), and while waiting for a response to my [issue](https://github.com/langchain-ai/langchain/issues/27668), I had to switch from LangChain to LlamaIndex. However, this immediately presented difficulties: the first three lines of the [documentation](https://llamahub.ai/l/llms/llama-index-llms-fireworks?from=llms)—two lines for installing the library and the line `from llama_index.llms.fireworks import Fireworks`—led me straight to two errors.
 
 In the case of LangChain, the reasons for creating an issue were the need to manually process 98 pages of documentation dedicated to integrating various tools with the LLM agent, as well as API provider platforms (instead of a convenient table like in other sections of the documentation or at least more templated code like in Llama_Index). Here, the problem turned out to be that errors occur "out of the box," literally in the first lines of code after installation.
